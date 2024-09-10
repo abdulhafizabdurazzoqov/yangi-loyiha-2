@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="hidden max-sm:flex gap-2 justify-center mb-4 w-[90%] m-auto">
+        <div
+          class="max-sm:bg-[#F8F8F8] text-[#A5A5A5] py-3 px-3 rounded-[10px]"
+        >
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          <input
+            class="max-sm:bg-[#F8F8F8] outline-0 w-[313px]"
+            type="text"
+            placeholder="Find your plants"
+          />
+        </div>
+        <span class="max-sm:bg-green-600 p-3 rounded-xl w-[45px] h-[45px]"
+          ><svg
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.2144 13.3926H1.28125"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10.9375 13.3934C10.9375 15.2651 11.5617 15.8884 13.4325 15.8884C15.3033 15.8884 15.9274 15.2651 15.9274 13.3934C15.9274 11.5218 15.3033 10.8984 13.4325 10.8984C11.5617 10.8984 10.9375 11.5218 10.9375 13.3934Z"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.99512 3.77801H15.9274"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6.27202 3.77677C6.27202 1.90595 5.64786 1.2818 3.77704 1.2818C1.9054 1.2818 1.28125 1.90595 1.28125 3.77677C1.28125 5.64841 1.9054 6.27175 3.77704 6.27175C5.64786 6.27175 6.27202 5.64841 6.27202 3.77677Z"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <nav
+        class="flex justify-between pt-6 px-32 items-center mb-3 max-sm:hidden"
+      >
+        <div>
+          <img src="Group.png" />
+        </div>
+        <div>
+          <ul class="flex gap-12">
+            <li>
+              <a class="font-normal text-base hover:font-bold" href="#">Home</a>
+            </li>
+            <li>
+              <a class="font-normal text-base hover:font-bold" href="#">Shop</a>
+            </li>
+            <li>
+              <a class="font-normal text-base hover:font-bold" href="#"
+                >Plant Care</a
+              >
+            </li>
+            <li>
+              <a class="font-normal text-base hover:font-bold" href="#"
+                >Blogs</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex gap-7 items-center">
+            <li>
+              <a class="hover:text-green-500" href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li>
+              <a class="hover:text-green-500" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="bg-green-500 py-2 px-4 rounded-md flex gap-1 text-white"
+                href="#"
+                ><button>
+                  <i class="fa-solid fa-right-from-bracket"></i>Login
+                </button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div
+        class="flex justify-between ml-32 mr-32 w-[82%] bg-[#F5F5F580] pt-16 pb-20 pl-10 relative mb-[26px] max-sm:bg-blue-300 m-auto gap-4 flexjustify-center"
+      >
+        <div class="w-[530px] max-sm:">
+          <p
+            class="font-medium text-sm mb-2 cursor-pointer hover:text-green-600 max-sm:font-medium text-[11px]"
+          >
+            Welcome to GreenShop
+          </p>
+          <h1
+            class="font-black text-7xl text-[#3D3D3D] cursor-pointer hover:text-green-600 max-sm:text-2xl"
+          >
+            Let’s Make a Better
+            <span class="text-green-600 mb-2 hover:text-[#3D3D3D]">Planet</span>
+          </h1>
+          <p
+            class="font-normal text-sm cursor-pointer mb-11 text-[#727272] hover:text-green-600"
+          >
+            We are an online plant shop offering a wide range of cheap and
+            trendy plants. Use our plants to create an unique Urban Jungle.
+            Order your favorite plants!
+          </p>
+          <button
+            class="bg-green-600 py-3 px-6 rounded-md text-white max-sm:bg-blue-300 font-bold text-xs"
+          >
+            <a class="max-sm:text-green-600" href="#"
+              >SHOP NOW <i class="fa-solid fa-right-long"></i
+            ></a>
+          </button>
+        </div>
+        <div class="max-sm:hidden">
+          <img
+            class="w-[518px] h-[518px] absolute right-6 bottom-2 max-sm:w-[213px]h-[213px]"
+            src="01 2.svg"
+          />
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="flex flex-col mb-24">
+        <div class="flex gap-12 w-[82%] m-auto">
+          <div class="bg-[#FBFBFB] w-[310px] pt-3 pr-6 pb-5 pl-4 max-sm:hidden">
+            <div class="mb-9">
+              <p
+                class="font-bold text-lg mr-2 cursor-pointer hover:text-green-600"
+              >
+                Categories
+              </p>
+              <ul class="flex justify-between">
+                <li class="w-[91px]">
+                  <a
+                    class="font-normal text-[#3D3D3D] hover:text-green-600"
+                    href="#"
+                    >House Plants Potter Plants Seeds Small Plants Big Plants
+                    Succulents Trerrariums Gardening Accessories</a
+                  >
+                </li>
+                <li class="w-[28px]">
+                  <a class="hover:text-green-600" href="#"
+                    >(33) (12) (65) (39) (23) (17) (19) (13) (18)
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mb-11">
+              <h3 class="font-bold text-lg mb-5">Price Range</h3>
+              <input class="mb-5" type="range" />
+              <div class="flex mb-5">
+                <p class="font-normal">Price:</p>
+                <p class="font-bold text-green-600">$39 - $1230</p>
+              </div>
+              <button class="bg-green-600 py-2 px-6 rounded-md">
+                <a class="text-white" href="#">Filter</a>
+              </button>
+            </div>
+            <div>
+              <p class="font-bold text-lg mb-2">Size</p>
+              <ul class="flex justify-between">
+                <li class="w-[56px]">
+                  <a class="hover:text-green-600" href="#"
+                    >Small Medium Large</a
+                  >
+                </li>
+                <li class="w-[30px]">
+                  <a class="hover:text-green-600" href="#">(119) (86) (78)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="whitespace-normal">
+              <img class="w-[350px]" src="Super Sale.png" />
+              <p class="font-bold text-2xl text-center">UP TO 75% OFF</p>
+              <img src="image 12.png" />
+            </div>
+          </div>
+          <div>
+            <div class="flex gap-[285px] mb-9 items-center">
+              <div>
+                <ul class="flex gap-10">
+                  <li>
+                    <a class="hover:text-green-600" href="#">All Plants</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-green-600" href="#">New Arrivals</a>
+                  </li>
+                  <li><a class="hover:text-green-600" href="#">Sale</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul class="flex gap-2">
+                  <li>
+                    <a class="hover:text-green-600" href="#">Short by:</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-green-600" href="#">Default sorting</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-green-600" href="#"
+                      ><i class="fa-solid fa-angle-down"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid gap-10 grid-cols-3 items-center max-sm:">
+              <div>
+                <img
+                  class="mb-7 w-[250px] h-[250px] cursor-pointer"
+                  src="grid/image 1.png"
+                />
+                <h3
+                  class="font-normal text-base cursor-pointer hover:text-green-600"
+                >
+                  Barberton Daisy
+                </h3>
+                <p
+                  class="font-bold text-lg cursor-pointer hover:text-green-600"
+                >
+                  $119.00
+                </p>
+              </div>
+              <div>
+                <img src="grid/product-21-320x320 1.png" />
+                <div class="flex gap-6 justify-center mb-7">
+                  <span class="hover:text-green-600 cursor-pointer"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></span>
+                  <span class="hover:text-green-600 cursor-pointer"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                  <span class="hover:text-green-600 cursor-pointer"
+                    ><i class="fa-solid fa-magnifying-glass"></i
+                  ></span>
+                </div>
+                <h3
+                  class="font-normal text-base cursor-pointer hover:text-green-600"
+                >
+                  Angel Wing Begonia
+                </h3>
+                <p
+                  class="font-bold text-lg cursor-pointer hover:text-green-600"
+                >
+                  $169.00
+                </p>
+              </div>
+              <div>
+                <img class="mb-12" src="grid/image 2 (2).png" />
+                <h3
+                  class="font-normal text-base cursor-pointer hover:text-green-600"
+                >
+                  African Violet
+                </h3>
+                <div
+                  class="flex gap-4 font-bold text-lg cursor-pointer hover:text-green-600"
+                >
+                  <p>$199.00</p>
+                  <p>$229.00</p>
+                </div>
+              </div>
+              <div>
+                <img class="mb-5" src="grid-2/01 3.png" />
+                <h3
+                  class="font-normal text-base cursor-pointer hover:text-green-600"
+                >
+                  Beach Spider Lily
+                </h3>
+                <p
+                  class="font-bold text-lg cursor-pointer hover:text-green-600"
+                >
+                  $129.00
+                </p>
+              </div>
+              <div>
+                <img class="pt-10 mb-9" src="grid-2/image 7.png" />
+                <h2
+                  class="font-normal text-base cursor-pointer hover:text-green-600"
+                >
+                  Blushing Bromeliad
+                </h2>
+                <p
+                  class="font-bold text-lg cursor-pointer hover:text-green-600"
+                >
+                  $139.00
+                </p>
+              </div>
+              <div>
+                <img class="pt-10 mb-9" src="grid-2/image 8.png" />
+                <h2
+                  class="font-normal text-base cursor-pointer hover:text-green-600"
+                >
+                  Aluminum Plant
+                </h2>
+                <p
+                  class="font-bold text-lg cursor-pointer hover:text-green-600"
+                >
+                  $179.00
+                </p>
+              </div>
+              <div>
+                <img class="mb-11" src="grid-3/image 9.png" />
+                <h2
+                  class="font-normal text-base cursor-pointer hover:text-green-600"
+                >
+                  Bird's Nest Fern
+                </h2>
+                <p
+                  class="font-bold text-lg cursor-pointer hover:text-green-600"
+                >
+                  $99.00
+                </p>
+              </div>
+              <div>
+                <img class="mb-8" src="grid-3/product-20-320x320 1.png" />
+                <h2
+                  class="font-normal text-base cursor-pointer hover:text-green-600"
+                >
+                  Broadleaf Lady Palm
+                </h2>
+                <p
+                  class="font-bold text-lg cursor-pointer hover:text-green-600"
+                >
+                  $99.00
+                </p>
+              </div>
+              <div>
+                <img class="mb-11" src="grid-3/image 10.png" />
+                <h2
+                  class="font-normal text-base cursor-pointer hover:text-green-600"
+                >
+                  Chinese Evergreen
+                </h2>
+                <p
+                  class="font-bold text-lg cursor-pointer hover:text-green-600"
+                >
+                  $39.00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-2 items-center justify-end w-[82%] m-auto mb-24">
+        <span class="py-2 px-3 rounded bg-green-600 cursor-pointer">1</span>
+        <span class="py-2 px-3 border-2 border-gray-300 rounded cursor-pointer"
+          >2</span
+        >
+        <span class="py-2 px-3 border-2 border-gray-300 rounded cursor-pointer"
+          >3</span
+        >
+        <span class="py-2 px-3 border-2 border-gray-300 rounded cursor-pointer"
+          >4</span
+        >
+        <span class="py-2 px-3 border-2 border-gray-300 rounded cursor-pointer"
+          ><i class="fa-solid fa-angle-right"></i
+        ></span>
+      </div>
+      <div class="flex w-[1205px] m-auto gap-7 mb-32 max-sm:grid grid-cols-1">
+        <div class="w-[586px] h-[250px] flex justify-between relative">
+          <div>
+            <img
+              class="w-[292px] h-[292px] absolute bottom-4"
+              src="grid-2/image 7.png"
+            />
+          </div>
+          <div class="w-[600px] absolute">
+            <h2
+              class="font-bold text-end cursor-pointer mb-2 hover:text-green-600"
+            >
+              SUMMER CACTUS <br />
+              & SUCCULENTS
+            </h2>
+            <p
+              class="font-normal text-end text-lg cursor-pointer mb-3 hover:text-green-600"
+            >
+              We are an online plant shop offering a wide <br />
+              range of cheap and trendy plants
+            </p>
+            <div class="text-end">
+              <button class="bg-green-600 py-2 px-6 rounded-md text-white">
+                Find More <i class="fa-solid fa-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[586px] h-[250px] flex justify-between relative">
+          <div>
+            <img
+              class="w-[292px] h-[292px] absolute bottom-4"
+              src="section png/image 15.png"
+            />
+          </div>
+          <div class="w-[600px] absolute">
+            <h2
+              class="font-bold text-end cursor-pointer mb-2 hover:text-green-600"
+            >
+              STYLING TRENDS <br />
+              & MUCH MORE
+            </h2>
+            <p
+              class="font-normal text-end text-lg cursor-pointer mb-3 hover:text-green-600"
+            >
+              We are an online plant shop offering a wide <br />
+              range of cheap and trendy plants
+            </p>
+            <div class="text-end">
+              <button class="bg-green-600 py-2 px-6 rounded-md text-white">
+                Find More <i class="fa-solid fa-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <div class="w-[82%] m-auto mb-24">
+        <h1
+          class="font-bold text-3xl text-center mb-3 cursor-pointer hover:text-green-600"
+        >
+          Our Blog Posts
+        </h1>
+        <p
+          class="font-normal text-sm text-center mb-9 cursor-pointer hover:text-green-600"
+        >
+          We are an online plant shop offering a wide range of cheap and trendy
+          plants.
+        </p>
+        <div class="grid grid-cols-4 gap-11 max-sm:w-[580px]">
+          <div>
+            <img src="main/01.png" />
+            <h3
+              class="font-medium text-sm cursor-pointer mb-1 hover:text-green-600"
+            >
+              September 12 I Read in 6 minutes
+            </h3>
+            <h1
+              class="font-bold text-xl cursor-pointer mb-1 hover:text-green-600"
+            >
+              Cactus & Succulent <br />
+              Care Tips
+            </h1>
+            <p
+              class="font-normal text-sm cursor-pointer mb-2 hover:text-green-600"
+            >
+              Cacti are succulents are easy care plants for any home or patio.
+            </p>
+            <p class="font-medium text-sm cursor-pointer hover:text-green-600">
+              Read More <i class="fa-solid fa-right-long"></i>
+            </p>
+          </div>
+          <div>
+            <img src="main/02.png" />
+            <h3
+              class="font-medium text-sm cursor-pointer mb-1 hover:text-green-600"
+            >
+              September 13 I Read in 2 minutes
+            </h3>
+            <h1
+              class="font-bold text-xl cursor-pointer mb-1 hover:text-green-600"
+            >
+              Top 10 Succulents <br />
+              for Your Home
+            </h1>
+            <p
+              class="font-normal text-sm cursor-pointer mb-2 hover:text-green-600"
+            >
+              Best in hanging baskets. Prefers medium to high light.
+            </p>
+            <p class="font-medium text-sm cursor-pointer hover:text-green-600">
+              Read More <i class="fa-solid fa-right-long"></i>
+            </p>
+          </div>
+          <div>
+            <img src="main/03.png" />
+            <h3
+              class="font-medium text-sm cursor-pointer mb-1 hover:text-green-600"
+            >
+              September 15 I Read in 3 minutes
+            </h3>
+            <h1
+              class="font-bold text-xl cursor-pointer mb-1 hover:text-green-600"
+            >
+              Cacti & Succulent <br />
+              Care Tips
+            </h1>
+            <p
+              class="font-normal text-sm cursor-pointer mb-2 hover:text-green-600"
+            >
+              Cacti and succulents thrive in containers and because most are..
+            </p>
+            <p class="font-medium text-sm cursor-pointer hover:text-green-600">
+              Read More <i class="fa-solid fa-right-long"></i>
+            </p>
+          </div>
+          <div>
+            <img src="main/04.png" />
+            <h3
+              class="font-medium text-sm cursor-pointer mb-1 hover:text-green-600"
+            >
+              September 15 I Read in 2 minutes
+            </h3>
+            <h1
+              class="font-bold text-xl cursor-pointer mb-1 hover:text-green-600"
+            >
+              Best Houseplants <br />
+              Room by Room
+            </h1>
+            <p
+              class="font-normal text-sm cursor-pointer mb-2 hover:text-green-600"
+            >
+              The benefits of houseplants are endless. In addition to..
+            </p>
+            <p class="font-medium text-sm cursor-pointer hover:text-green-600">
+              Read More <i class="fa-solid fa-right-long"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div
+        class="grid grid-cols-4 w-[82%] m-auto justify-between items-center bg-[#FBFBFB] p-6 max-sm:"
+      >
+        <div class="w-[204px] m-auto">
+          <img src="footer/Frame.png" />
+          <img class="mb-4" src="footer/Frame (1).png" />
+          <h1
+            class="font-bold text-lg mb-2 cursor-pointer hover:text-green-600"
+          >
+            Garden Care
+          </h1>
+          <p
+            class="font-normal text-sm text-[#727272] cursor-pointer hover:text-green-600"
+          >
+            We are an online plant shop offering a wide range of cheap and
+            trendy plants.
+          </p>
+        </div>
+        <div class="w-[204px]">
+          <img class="mb-4" src="footer/Group 18.png" />
+          <h1
+            class="font-bold text-lg mb-2 cursor-pointer hover:text-green-600"
+          >
+            Plant Renovation
+          </h1>
+          <p
+            class="font-normal text-sm text-[#727272] cursor-pointer hover:text-green-600"
+          >
+            We are an online plant shop offering a wide range of cheap and
+            trendy plants.
+          </p>
+        </div>
+        <div class="w-[204px]">
+          <img class="mb-4" src="footer/Group 19.png" />
+          <h1
+            class="font-bold text-lg mb-2 cursor-pointer hover:text-green-600"
+          >
+            Watering Graden
+          </h1>
+          <p
+            class="font-normal text-sm text-[#727272] cursor-pointer hover:text-green-600"
+          >
+            We are an online plant shop offering a wide range of cheap and
+            trendy plants.
+          </p>
+        </div>
+        <div class="w-[354px] bg-[#FBFBFB]">
+          <h1
+            class="font-bold text-lg cursor-pointer mb-4 w-[200px] hover:text-green-600"
+          >
+            Would you like to join newsletters?
+          </h1>
+          <div class="bg-white flex justify-between pl-3 rounded-md mb-4">
+            <input
+              class="outline-0"
+              id="input"
+              type="text"
+              placeholder="enter your email address..."
+            />
+            <label
+              class="bg-green-600 py-3 px-6 text-white rounded-r-md"
+              for="input"
+              >Join</label
+            >
+          </div>
+          <p
+            class="w-[354px] h-[89px] cursor-pointer text-[#727272] mb-8 hover:text-green-600"
+          >
+            We usually post offers and challenges in newsletter. We’re your
+            online houseplant destination. We offer a wide range of houseplants
+            and accessories shipped directly from our (green)house to yours!
+          </p>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-4 w-[82%] m-auto bg-[#46A3581A] p-6 items-center"
+      >
+        <img class="cursor-pointer" src="Group.png" />
+        <span
+          class="flex items-center gap-2 cursor-pointer font-normal text-sm hover:text-green-600"
+          ><svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.0918 8.92531C12.0918 7.77425 11.1591 6.84155 10.0081 6.84155C8.85787 6.84155 7.92517 7.77425 7.92517 8.92531C7.92517 10.0755 8.85787 11.0082 10.0081 11.0082C11.1591 11.0082 12.0918 10.0755 12.0918 8.92531Z"
+              stroke="#46A358"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.99959 17.5C7.58457 17.5 3.75 13.2989 3.75 8.8322C3.75 5.33539 6.54758 2.5 9.99959 2.5C13.4516 2.5 16.25 5.33539 16.25 8.8322C16.25 13.2989 12.4154 17.5 9.99959 17.5Z"
+              stroke="#46A358"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          70 West Buckingham Ave.
+          <br />
+          Farmingdale, NY 11735</span
+        >
+        <span
+          class="flex items-center gap-2 cursor-pointer hover:text-green-600"
+          ><svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.6208 7.51587C14.6208 7.51587 11.9457 10.7264 9.98919 10.7264C8.03347 10.7264 5.32837 7.51587 5.32837 7.51587"
+              stroke="#46A358"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2.0434 9.97404C2.0434 4.27562 4.02753 2.37671 9.97991 2.37671C15.9323 2.37671 17.9164 4.27562 17.9164 9.97404C17.9164 15.6716 15.9323 17.5714 9.97991 17.5714C4.02753 17.5714 2.0434 15.6716 2.0434 9.97404Z"
+              stroke="#46A358"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          contact@greenshop.com
+        </span>
+        <span
+          class="flex items-center gap-2 cursor-pointer hover:text-green-600"
+          ><svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.9604 2.29175C15.0446 2.63425 17.4813 5.06758 17.8279 8.15175"
+              stroke="#46A358"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M11.9604 5.24414C13.4363 5.53081 14.5896 6.68497 14.8771 8.16081"
+              stroke="#46A358"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6.41708 13.5825C0.668758 7.83352 1.48616 5.20096 2.09213 4.35263C2.16997 4.21552 4.08873 1.34323 6.1455 3.02839C11.2507 7.23288 4.78759 6.63843 9.0745 10.9261C13.3623 15.2128 12.7669 8.74996 16.9716 13.8541C18.6568 15.9117 15.7844 17.8303 15.6482 17.9073C14.7998 18.5141 12.1663 19.3315 6.41708 13.5825Z"
+              stroke="#46A358"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          +88 01911 717 490
+        </span>
+      </div>
+      <div class="w-[82%] m-auto">
+        <div class="grid grid-cols-4 bg-[#FBFBFB] p-8">
+          <ul>
+            <li>
+              <a class="font-bold text-lg mb-2 hover:text-green-600" href="#"
+                >My Account</a
+              >
+            </li>
+            <li><a class="hover:text-green-600" href="#">My Account </a></li>
+            <li><a class="hover:text-green-600" href="#">Our stores</a></li>
+            <li><a class="hover:text-green-600" href="#">Contact us</a></li>
+            <li><a class="hover:text-green-600" href="#">Career</a></li>
+            <li><a class="hover:text-green-600" href="#"> Specials</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a class="font-bold text-lg mb-2 hover:text-green-600" href="#"
+                >Help & Guide</a
+              >
+            </li>
+            <li><a class="hover:text-green-600" href="#">Help Center </a></li>
+            <li><a class="hover:text-green-600" href="#">How to Buy</a></li>
+            <li>
+              <a class="hover:text-green-600" href="#"> Shipping & Delivery</a>
+            </li>
+            <li>
+              <a class="hover:text-green-600" href="#"> Product Policy</a>
+            </li>
+            <li><a class="hover:text-green-600" href="#">How to Return</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a class="font-bold text-lg mb-2 hover:text-green-600" href="#"
+                >Categories</a 
+              >
+            </li>
+            <li><a class="hover:text-green-600" href="#">House Plants </a></li>
+            <li><a class="hover:text-green-600" href="#">Potter Plants</a></li>
+            <li><a class="hover:text-green-600" href="#">Seeds</a></li>
+            <li><a class="hover:text-green-600" href="#">Small Plants</a></li>
+            <li><a class="hover:text-green-600" href="#">Accessories</a></li>
+          </ul>
+          <div>
+            <h1
+              class="font-bold text-lg cursor-pointer mb-5 hover:text-green-600"
+            >
+              Social Media
+            </h1>
+            <div class="flex gap-2 mb-8">
+              <span class="border-2 py-2 px-3 rounded text-green-600"
+                ><i class="fa-brands fa-facebook"></i
+              ></span>
+              <span class="border-2 py-2 px-3 rounded text-green-600"
+                ><i class="fa-brands fa-instagram"></i
+              ></span>
+              <span class="border-2 py-2 px-3 rounded text-green-600"
+                ><i class="fa-brands fa-twitter"></i
+              ></span>
+              <span class="border-2 py-2 px-3 rounded text-green-600"
+                ><i class="fa-brands fa-linkedin"></i
+              ></span>
+              <span class="border-2 py-2 px-3 rounded text-green-600"
+                ><i class="fa-brands fa-square-youtube"></i
+              ></span>
+            </div>
+            <h1
+              class="font-bold text-lg cursor-pointer mb-3 hover:text-green-600"
+            >
+              We accept
+            </h1>
+            <img src="image 16.png" />
+          </div>
+        </div>
+      </div>  
+      <hr class="w-[82%] m-auto mb-2 text-[#46A35833]" />
+      <div class="flex justify-center">
+        <h1 class="font-normal text-sm cursor-pointer hover:text-green-600">
+          © 2021 GreenShop. All Rights Reserved.
+        </h1>
+      </div>
+    </footer>
+  </body>
+</html>
+  
